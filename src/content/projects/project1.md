@@ -1,7 +1,7 @@
 ---
-title: Project 1
+title: MTGlossary
 publishDate: 2019-12-01 00:00:00
-img: /assets/stock-2.jpg
+img: https://cdn.discordapp.com/attachments/629436458482008075/1286848524901810207/image.png?ex=66ef6694&is=66ee1514&hm=abd01f0d2361e5ff62a49c3c8c1a4c9e2c33e429d15297f47e647da73bc2e2ee&
 description: |
   This is the description for Project 1
 tags:

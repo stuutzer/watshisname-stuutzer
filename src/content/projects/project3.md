@@ -1,7 +1,7 @@
 ---
-title: Project 3
+title: DoseCat
 publishDate: 2020-10-02 00:00:00
-img: /assets/stock-4.jpg
+img: https://cdn.discordapp.com/attachments/629436458482008075/1286853596222324849/image.png?ex=66ef6b4d&is=66ee19cd&hm=1a2bf572787ffaa63a78036da4c3086f49f64bbfa698559da19ef98988cdb67d&
 description: |
   This is the description for Project 3
 tags:

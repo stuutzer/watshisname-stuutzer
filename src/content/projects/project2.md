@@ -1,7 +1,7 @@
 ---
-title: Project 2
+title: mixcast.
 publishDate: 2020-03-04 00:00:00
-img: /assets/stock-3.jpg
+img: https://cdn.discordapp.com/attachments/629436458482008075/1286848938799792269/image.png?ex=66ef66f7&is=66ee1577&hm=aa5fc4bb34111062e77e2b1bf0d7ab9f2ed7bed09517201dd97de22aca1dec5d&
 description: |
   This is the description for Project 2
 tags:
