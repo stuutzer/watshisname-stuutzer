@@ -1,10 +1,35 @@
+import { Fragment } from "react";
+
 export default function Footer(){
+    const footerLinks = [
+        {
+            key: 1,
+            name: "GitHub",
+            url: "https://github.com/stuutzer",
+        },
+        {
+            key: 2,
+            name: "LinkedIn",
+            url: "https://www.linkedin.com/in/justin-teng-tu/",
+        },
+        {
+            key: 3,
+            name: "Resume PDF",
+            url: "JustinTuResumeMarch2025.pdf",
+        },
+    ]
+
     return(
         <>
         <footer>
-            <a href="https://github.com/stuutzer" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/justin-teng-tu/" target="_blank">Linkedin</a>
-            <a href="">Resume PDF</a>
+            {
+                footerLinks.map(footerLink =>
+                    <Fragment key={footerLink.key}>
+                        <a href={footerLink.url} target="_blank">{footerLink.name}</a>
+                        {footerLink.key < footerLinks.length && " | "}
+                    </Fragment>
+                )
+            }
         </footer>
         </>
     );

@@ -11,7 +11,7 @@ export default function Works() {
       imgSrc: "mtglossary.png",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
       roles: ["Interface Design", "Product Design", "Full-Stack Development",],
-      link: "https://www.mtglossary.com/",
+      url: "https://www.mtglossary.com/",
     },
     {
       key: 2,
@@ -21,7 +21,7 @@ export default function Works() {
       imgSrc: "tawhiti.png",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
       roles: ["Graphic Design", "Interface Design", "Project Management", "Front-End Development",],
-      link: "https://www.tawhiti.co.nz/",
+      url: "https://www.tawhiti.co.nz/",
     },
   ];
   
@@ -44,7 +44,7 @@ export default function Works() {
                     <br />
                     {work.roles.join(', ')}
                 </p>
-                <a href={work.link}>Visit Site</a>
+                <a href={work.url}>Visit Site</a>
             </aside>
           </section>
         )
