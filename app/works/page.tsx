@@ -28,7 +28,7 @@ export default function Works() {
   
   return (
     <>
-    <Navigation />
+    <Navigation currentPage="Works"/>
     <main>
       {
         works.map(work =>
