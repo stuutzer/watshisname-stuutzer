@@ -1,4 +1,5 @@
 import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         but I already stated it in the h2 tag. What am I supposed to write here?
       </p>
     </main>
+    <Footer/>
     </>
   );
 }
