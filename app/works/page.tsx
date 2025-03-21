@@ -29,23 +29,29 @@ export default function Works() {
   return (
     <>
     <Navigation currentPage="Works"/>
-    <main>
+    <main className="wp-main">
       {
         works.map(work =>
           <section key={work.key}>
-            <p>{work.key}/{works.length}</p>
-            <h2>{work.name}</h2>
-            <h3>{work.time} / {work.category}</h3>
-            <img src={work.imgSrc} alt={"Screenshot of " + work.name + " website."} />
-            <p>{work.desc}</p>
-            <aside>
-                <p>
-                    <span>Project Responsibilities:</span>
-                    <br />
-                    {work.roles.join(', ')}
-                </p>
-                <a href={work.url}>Visit Site</a>
-            </aside>
+            <div className="wp-work-top">
+              <p className="wp-work-number">{work.key}/{works.length}</p>
+              <div>
+                <h2 className="wp-work-name">{work.name}</h2>
+                <h3 className="wp-work-info">{work.time} / {work.category}</h3>
+              </div>
+            </div>
+            <img src={work.imgSrc} alt={"Screenshot of " + work.name + " website."} className="wp-work-img" />
+            <div className="wp-work-bottom">
+              <p className="wp-work-desc">{work.desc}</p>
+              <aside>
+                  <p className="wp-work-spec">
+                      <span className="wp-work-span">Project Responsibilities:</span>
+                      <br />
+                      {work.roles.join(', ')}
+                  </p>
+                  <a href={work.url} className="wp-work-link">Visit Site</a>
+              </aside>
+            </div>
           </section>
         )
       }

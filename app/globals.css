@@ -6,11 +6,11 @@
   text-decoration: none;
 }
 
-a{
+a {
   color: inherit;
 }
 
-body{
+body {
   background: url(../public/background.jpg);
   background-attachment: fixed;
   background-position: left 75%;
@@ -19,14 +19,15 @@ body{
   color: white;
 }
 
-.nav-outer{
+.nav-outer {
   align-items: center;
   display: flex;
   height: 100vh;
   margin: 0 0 0 10rem;
+  position: fixed;
 }
 
-.nav-link{
+.nav-link {
   color: rgba(255, 255, 255, 0.5);
   font-size: 5.5rem;
   font-weight: 700;
@@ -34,63 +35,116 @@ body{
   transition: 0.2s;
 }
 
-.nav-current{
+.nav-current {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: rgba(255, 255, 255, 1);
 }
 
-.nav-middle{
+.nav-middle {
   margin: 0 0 0 7.5rem;
 }
 
-.nav-bottom{
+.nav-bottom {
   margin: 0 0 0 15rem;
 }
 
-.hp-main{
+.hp-main {
   bottom: 8rem;
   position: absolute;
   right: 10rem;
 }
 
-.hp-title{
+.hp-title {
   display: flex;
   flex-direction: row-reverse;
   align-items: end;
 }
 
-.hp-alias{
+.hp-alias {
   font-size: 1.6rem;
   font-weight: 300;
   margin: 0 0.5rem 0 0;
   text-align: end;
 }
 
-.hp-name{
+.hp-name {
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 90%;
   text-align: end;
 }
 
-.hp-occupation{
+.hp-occupation {
   font-size: 2.4rem;
   font-weight: 300;
   line-height: 90%;
   text-align: end;
 }
 
-.hp-text{
+.hp-text {
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0.25rem 0 0;
   text-align: end;
 }
 
-footer{
+.wp-main {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 10rem;
+  width: 50%;
+}
+
+.wp-work-top {
+  display: flex;
+}
+
+.wp-work-number {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 0.75rem 1rem 0 0.5rem;
+}
+
+.wp-work-name {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.wp-work-info {
+  font-size: 1.6rem;
+  font-weight: 400;
+
+}
+
+.wp-work-desc {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.wp-work-img {
+  width: 10rem;
+}
+
+.wp-work-bottom {
+  display: flex;
+}
+
+.wp-work-span {
+  font-weight: 600;
+}
+
+.wp-work-link {
+  text-decoration: underline;
+}
+
+
+
+
+footer {
   bottom: 8rem;
   color: rgba(255, 255, 255, 0.6);
   font-size: 1.2rem;
@@ -100,6 +154,6 @@ footer{
   transition: 0.2s;
 }
 
-.footer-link:hover{
+.footer-link:hover {
   color: rgba(255, 255, 255, 1);
 }
