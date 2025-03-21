@@ -32,7 +32,7 @@ export default function Works() {
     <main className="wp-main">
       {
         works.map(work =>
-          <section key={work.key}>
+          <section key={work.key} className="wp-work">
             <div className="wp-work-top">
               <p className="wp-work-number">{work.key}/{works.length}</p>
               <div>

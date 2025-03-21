@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid greenyellow; */
+  border: 1px solid greenyellow;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -8,6 +8,7 @@
 
 a {
   color: inherit;
+  margin: 0;
 }
 
 body {
@@ -29,9 +30,11 @@ body {
 
 .nav-link {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 700;
   line-height: 90%;
+  margin: 0;
+  padding: 0;
   transition: 0.2s;
 }
 
@@ -64,28 +67,28 @@ body {
 }
 
 .hp-alias {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 300;
   margin: 0 0.5rem 0 0;
   text-align: end;
 }
 
 .hp-name {
-  font-size: 3.4rem;
+  font-size: 3.1rem;
   font-weight: 700;
   line-height: 90%;
   text-align: end;
 }
 
 .hp-occupation {
-  font-size: 2.4rem;
+  font-size: 2.15rem;
   font-weight: 300;
   line-height: 90%;
   text-align: end;
 }
 
 .hp-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin: 0.25rem 0 0;
   text-align: end;
@@ -99,38 +102,54 @@ body {
   width: 50%;
 }
 
+.wp-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
 .wp-work-top {
   display: flex;
 }
 
 .wp-work-number {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
   margin: 0.75rem 1rem 0 0.5rem;
 }
 
 .wp-work-name {
-  font-size: 2.4rem;
+  font-size: 2.15rem;
   font-weight: 400;
 }
 
 .wp-work-info {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 400;
 
-}
-
-.wp-work-desc {
-  font-size: 1.2rem;
-  font-weight: 400;
 }
 
 .wp-work-img {
-  width: 10rem;
+  aspect-ratio: 16/9;
+  border-radius: 1rem;
+  margin: 2rem 0;
+  width: 50rem;
 }
 
 .wp-work-bottom {
   display: flex;
+}
+
+.wp-work-desc {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0 3rem 0 0;
+  width: 100%;
+}
+
+.wp-work-spec {
+  font-size: 1.1rem;
 }
 
 .wp-work-span {
@@ -147,10 +166,10 @@ body {
 footer {
   bottom: 8rem;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 400;
   left: 10rem;
-  position: absolute;
+  position: fixed;
   transition: 0.2s;
 }
 
