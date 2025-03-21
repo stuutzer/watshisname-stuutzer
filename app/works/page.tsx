@@ -47,8 +47,9 @@ export default function Works() {
                   <p className="wp-work-spec">
                       <span className="wp-work-span">Project Responsibilities:</span>
                       <br />
-                      {work.roles.join(', ')}
+                      {work.roles.join(', ') + "."}
                   </p>
+                  <br />
                   <a href={work.url} className="wp-work-link">Visit Site</a>
               </aside>
             </div>
