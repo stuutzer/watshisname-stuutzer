@@ -1,3 +1,7 @@
+:root {
+  color-scheme: dark;
+}
+
 * {
   /* border: 1px solid greenyellow; */
   list-style: none;
@@ -11,6 +15,20 @@ a {
   margin: 0;
 }
 
+.fade-in {
+  animation: fade-in 0.3s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
 body {
   background: url(../public/background.jpg);
   background-attachment: fixed;
@@ -18,6 +36,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  overflow-y: scroll;
 }
 
 .nav-outer {
@@ -35,7 +54,7 @@ body {
   line-height: 90%;
   margin: 0;
   padding: 0;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .nav-current {
@@ -99,7 +118,7 @@ body {
   flex-direction: column;
   position: absolute;
   right: 10rem;
-  width: 50%;
+  width: 55%;
 }
 
 .wp-work {
@@ -121,7 +140,7 @@ body {
 
 .wp-work-name {
   font-size: 2.25rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .wp-work-info {
@@ -141,28 +160,26 @@ body {
 }
 
 .wp-work-desc {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 400;
   margin: 0 3rem 0 0;
   width: 48rem;
 }
 
 .wp-work-spec {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   width: 25rem;
 }
 
 .wp-work-span {
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .wp-work-link {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   text-decoration: underline;
 }
-
-
-
 
 footer {
   bottom: 8rem;

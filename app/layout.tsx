@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
 
 const aileron = localFont({
   src: [
@@ -32,7 +34,9 @@ export const metadata: Metadata = {
   description: "Check out my super dope website.",
 };
 
+
 export default function RootLayout({
+  
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -40,7 +44,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aileron.className}`}>
+        <Navigation/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

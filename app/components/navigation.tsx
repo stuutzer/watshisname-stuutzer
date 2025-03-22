@@ -1,6 +1,11 @@
+'use client'
+ 
+import { usePathname } from 'next/navigation'
 import Link from "next/link";
 
-export default function Navigation({ currentPage }: { currentPage: string }) {
+export default function Navigation() {
+    const pathname = usePathname()
+    
     const pages = [
         {
             name: "Home",
@@ -12,6 +17,11 @@ export default function Navigation({ currentPage }: { currentPage: string }) {
         },
     ]
 
+    let margin = 7.5;
+    if (pathname === "/works"){
+        margin = 0;
+    };
+
     return(
         <>
         <header className="nav-outer">
@@ -22,15 +32,15 @@ export default function Navigation({ currentPage }: { currentPage: string }) {
                             <li key={page.name}>
                                 <Link 
                                     href={page.link} 
-                                    className={currentPage === page.name ? "nav-link nav-current" : "nav-link"} 
-                                    style={{marginLeft: (idx * 7.5) + "rem",}}
+                                    className={pathname === page.link ? "nav-link nav-current" : "nav-link"} 
+                                    style={{marginLeft: (idx * margin) + "rem",}}
                                 >
                                     {page.name}
                                 </Link>
                             </li>
                         )
                     }
-                    <li><a href="mailto:justintengtu@gmail.com" className="nav-link" style={{marginLeft: (pages.length * 7.5) + "rem",}}>Contact</a></li>
+                    <li><a href="mailto:justintengtu@gmail.com" className="nav-link" style={{marginLeft: (pages.length * margin) + "rem",}}>Contact</a></li>
                 </ul>
             </nav>
         </header>
