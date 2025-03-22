@@ -31,7 +31,11 @@ export default function Works() {
     return (
       <>
       <AnimatePresence>
-        <motion.main className="wp-main fade-in">
+        <motion.main 
+          className="wp-main fade-in"
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
           {
             works.map(work =>
               <section key={work.key} className="wp-work">
