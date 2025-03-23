@@ -1,4 +1,4 @@
-'use client'
+"use client"
  
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
@@ -22,9 +22,14 @@ export default function Navigation() {
         margin = 0;
     };
 
+    let pageName = "Home"
+    if (pathname === "/works"){
+        pageName = "Works"
+    };
+
     return(
         <>
-        <header className="nav-outer">
+        <header className="nav-main">
             <nav>
                 <ul>
                     {
@@ -44,6 +49,7 @@ export default function Navigation() {
                 </ul>
             </nav>
         </header>
+        <header className='menu-header'><button className='menu-button'>menu</button><p className='menu-page'> / {pageName}</p></header>
         </>
     );
 }

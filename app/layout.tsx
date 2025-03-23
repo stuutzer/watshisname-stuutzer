@@ -44,9 +44,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${aileron.className}`}>
-        <Navigation/>
-        {children}
-        <Footer/>
+          <div className="content">
+            <Navigation/>
+              {children}
+            <Footer/>
+          </div>
+          <div className="background"></div>
       </body>
     </html>
   );
