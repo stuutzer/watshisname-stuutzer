@@ -34,7 +34,7 @@ a {
 } */
 
 .background {
-  background: url(../public/background.jpg);
+  background: url(../public/background.webp);
   background-attachment: fixed;
   background-color: black;
   background-position: left 75%;
