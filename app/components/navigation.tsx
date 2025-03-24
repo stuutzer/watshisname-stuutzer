@@ -2,6 +2,9 @@
  
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
+import { useState, useEffect } from 'react';
+import { AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 
 export default function Navigation() {
     const pathname = usePathname()
@@ -27,6 +30,33 @@ export default function Navigation() {
         pageName = "Works"
     };
 
+    const[isMenuOpen, setIsMenuOpen] = useState(false);
+    let buttonText = "menu";
+    if (isMenuOpen){
+        buttonText = "back";
+    };
+
+
+    const handleClick = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    
+    const handleResize = () => {
+        if (window.innerWidth > 1000) {
+            setIsMenuOpen(false);
+        }
+    };
+
+    useEffect(() => {
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => {
+        window.removeEventListener("resize", handleResize);
+        };
+    },[]);
+
+    
+
     return(
         <>
         <header className="nav-main">
@@ -49,7 +79,44 @@ export default function Navigation() {
                 </ul>
             </nav>
         </header>
-        <header className='menu-header'><button className='menu-button'>menu</button><p className='menu-page'> / {pageName}</p></header>
+        <header className='menu-header'>
+            <div>
+                <button
+                    className='menu-button'
+                    onClick={handleClick}
+                >
+                    {buttonText}
+                </button>
+                <p className='menu-page'> / {pageName}</p>
+            </div>
+        </header>
+        <AnimatePresence>
+        {isMenuOpen && (
+                <motion.nav 
+                    className='menu-overlay fade-in'
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                >
+                    <ul>
+                        {
+                            pages.map((page) =>
+                                <li key={page.name}>
+                                    <Link
+                                        href={page.link}
+                                        className={pathname === page.link ? "nav-link nav-current" : "nav-link"}
+                                        onClick={handleClick}
+                                    >
+                                        {page.name}
+                                    </Link>
+                                </li>
+                            )
+                        }
+                        <li><a href="mailto:justintengtu@gmail.com" className="nav-link" >Contact</a></li>
+                    </ul>
+                </motion.nav>
+            
+        )}
+        </AnimatePresence>
         </>
     );
 }

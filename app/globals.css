@@ -3,7 +3,7 @@
 }
 
 * {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -62,7 +62,7 @@ a {
   height: 17.5rem;
   top: calc(50vh - (17.5rem / 2));
   position: fixed;
-  z-index: 2;
+  z-index: 3;
 }
 
 .nav-link {
@@ -94,7 +94,7 @@ a {
 
 .menu-header {
   display: none;
-  position: fixed;
+  z-index: 3;
 }
 
 .menu-button {
@@ -119,6 +119,17 @@ a {
   font-family: Aileron;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.menu-overlay {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 1);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
 }
 
 .hp-main {
@@ -241,7 +252,7 @@ footer {
   left: 10rem;
   position: fixed;
   transition: 0.2s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .footer-link:hover {
@@ -259,7 +270,7 @@ footer {
   }
 
   .wp-main {
-    right: 7.5rem;
+    padding: 0 7.5rem 0 calc(100% - 10rem - 55%);
   }
 
   .wp-work-img {
@@ -296,7 +307,7 @@ footer {
   }
 
   .wp-main {
-    right: 5rem;
+    padding: 0 5rem 0 calc(100% - 10rem - 55%);
   }
 
   .wp-work-img {
@@ -313,6 +324,11 @@ footer {
     backdrop-filter: blur(0.25rem);
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .background {
+    background-position: center;
   }
 
   .nav-main {
@@ -320,17 +336,33 @@ footer {
   }
 
   .menu-header {
-    display: inline;
+    display: flex;
+    align-items: end;
+    width: calc(100vw - 10rem);
+    height: 5rem;
+    position: fixed;
   }
 
   .wp-main {
+    height: calc(100vh - 10rem);
+    padding: 5rem;
     position: static;
     right: auto;
+    width: calc(100vw - 10rem);
+  }
+
+  .wp-work {
+    height: 100vh;
+  }
+
+  .wp-work-img {
+    width: calc(100vw - 15rem);
   }
 
   footer {
-    bottom: auto;
+    display: inline;
+    height: 5rem;
+    bottom: 0;
     left: auto;
-    position: static;
   }
 }
