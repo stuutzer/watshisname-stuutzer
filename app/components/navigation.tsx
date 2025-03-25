@@ -31,6 +31,7 @@ export default function Navigation() {
     };
 
     const[isMenuOpen, setIsMenuOpen] = useState(false);
+
     let buttonText = "menu";
     if (isMenuOpen){
         buttonText = "back";
