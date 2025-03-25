@@ -95,7 +95,7 @@ export default function Navigation() {
                 <motion.nav 
                     className='menu-overlay fade-in'
                     exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{  delay: 0.125, duration: 0.3 }}
                 >
                     <ul>
                         {

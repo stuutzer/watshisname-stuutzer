@@ -17,6 +17,7 @@ export default function Home() {
           <h3 className="hp-alias">(watshisname-stuutzer.)</h3>
         </div>
         <h2 className="hp-occupation">Front-End Developer. UX/UI Designer.</h2>
+        <h2 className="hp-occupation-mobile">Front-End/UX/UI.</h2>
         <p className="hp-text">
           I was going to talk about how I’m an Auckland-based designer/developer,
           <br />
