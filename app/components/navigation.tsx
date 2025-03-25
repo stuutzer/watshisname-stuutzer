@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { motion } from 'motion/react';
-import path from 'path';
 
 
 
