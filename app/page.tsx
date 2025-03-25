@@ -10,7 +10,7 @@ export default function Home() {
       <motion.main 
         className="hp-main fade-in"
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.2 }}
       >
         <div className="hp-title">
           <h1 className="hp-name">Justin Tu.</h1>

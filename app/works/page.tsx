@@ -34,7 +34,7 @@ export default function Works() {
         <motion.main 
           className="wp-main fade-in"
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.2 }}
         >
           {
             works.map(work =>

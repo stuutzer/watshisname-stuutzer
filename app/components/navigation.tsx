@@ -5,6 +5,9 @@ import Link from "next/link";
 import { useState, useEffect } from 'react';
 import { AnimatePresence } from 'motion/react';
 import { motion } from 'motion/react';
+import path from 'path';
+
+
 
 export default function Navigation() {
     const pathname = usePathname()
@@ -56,6 +59,10 @@ export default function Navigation() {
         };
     },[]);
 
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [pathname])
+
     
 
     return(
@@ -96,7 +103,7 @@ export default function Navigation() {
                 <motion.nav 
                     className='menu-overlay fade-in'
                     exit={{ opacity: 0 }}
-                    transition={{  delay: 0.125, duration: 0.3 }}
+                    transition={{  duration: 0.2 }}
                 >
                     <ul>
                         {
@@ -105,7 +112,6 @@ export default function Navigation() {
                                     <Link
                                         href={page.link}
                                         className={pathname === page.link ? "nav-link nav-current" : "nav-link"}
-                                        onClick={handleClick}
                                     >
                                         {page.name}
                                     </Link>

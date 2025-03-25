@@ -16,7 +16,7 @@ a {
 }
 
 .fade-in {
-  animation: fade-in 0.3s;
+  animation: fade-in 0.2s;
 }
 
 @keyframes fade-in {
@@ -122,12 +122,13 @@ a {
 
 .menu-overlay {
   align-items: center;
-  background: url(../public/background.webp);
+  /* background: url(../public/background.webp);
   background-attachment: fixed;
   background-color: black;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  background-color: black;
   display: flex;
   height: 100vh;
   justify-content: center;
