@@ -3,7 +3,7 @@
 }
 
 * {
-  border: 1px solid greenyellow;
+  /* border: 1px solid greenyellow; */
   list-style: none;
   margin: 0;
   padding: 0;
@@ -210,6 +210,7 @@ a {
   display: flex;
 }
 
+
 .wp-work-number {
   font-size: 1.5rem;
   font-weight: 400;
@@ -224,14 +225,12 @@ a {
 .wp-work-info {
   font-size: 1.5rem;
   font-weight: 400;
-
 }
 
 .wp-work-img {
   aspect-ratio: 16 / 9;
   border-radius: 1rem;
   margin: 2rem 0 3rem;
-
   width: 50rem;
 }
 
@@ -339,7 +338,7 @@ footer {
   }
 }
 
-@media (max-width: 1200px) and (max-height: 1300px) {
+@media (max-width: 1280px) and (max-height: 1300px) {
   .content {
     display: flex;
     flex-direction: column;
@@ -355,10 +354,11 @@ footer {
   }
 
   .menu-header {
-    align-items: end;
-    display: flex;
-    height: 5rem;
-    width: calc(100vw - 10rem);
+    display: inline;
+    height: fit-content;
+    left: 5rem;
+    top: 5rem;
+    width: fit-content;
   }
 
   .wp-main {
@@ -383,9 +383,7 @@ footer {
   }
 
   footer {
-    display: inline;
-    height: 5rem;
-    bottom: 0;
+    bottom: 5rem;
     left: auto;
   }
 }
@@ -420,7 +418,7 @@ footer {
 
 @media (max-width: 700px) and (max-height: 1300px) {
   .menu-header {
-    width: calc(100vw - 5rem);
+    left: 2.5rem;
   }
 
   .wp-main {
@@ -449,17 +447,13 @@ footer {
 
 }
 
-@media (max-width: 1200px) and (max-height: 950px) {
+@media (max-width: 1280px) and (max-height: 950px) {
   .wp-work-img {
     width: 80%;
   }
 
-  .menu-header {
-    width: 30rem;
-  }
-
   .wp-main {
-    padding: calc(50vw - 15rem);
+    padding: 5rem calc(50vw - 15rem);
     position: static;
     right: auto;
     width: 30rem;
@@ -482,6 +476,107 @@ footer {
   }
 
 
+
+
+
+}
+
+@media (max-width: 600px) and (max-height: 950px) {
+  .wp-work-img {
+    width: 80%;
+  }
+
+  .wp-main {
+    padding: 5rem calc(50vw - 10rem);
+    position: static;
+    right: auto;
+    width: 20rem;
+  }
+
+  .wp-work-img {
+    width: 100%;
+    margin: 1rem 0 1rem;
+  }
+
+  .wp-work-desc {
+    font-size: 1rem;
+  }
+
+  .wp-work-span {
+    font-size: 1.125rem;
+  }
+
+  .wp-work-spec {
+    font-size: 1rem;
+  }
+}
+
+@media(max-width: 1280px) and (max-height: 600px) {
+  .nav-link {
+    font-size: 3.5rem;
+  }
+
+  .menu-header {
+    top: 2.5rem;
+  }
+
+  .menu-button {
+    font-size: 1.5rem;
+  }
+
+  .menu-page {
+    font-size: 1.5rem;
+  }
+
+  .wp-work-top {
+    flex-direction: row;
+  }
+
+  .wp-work-number {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem 1rem 0 0.5rem;
+  }
+
+  .wp-work-name {
+    font-size: 2rem;
+  }
+
+
+  .wp-work-info {
+    font-size: 1.25rem;
+  }
+
+  .wp-work-img {
+    width: 80%;
+  }
+
+  .wp-work-bottom {
+    flex-direction: row;
+  }
+
+  .wp-work-desc {
+    font-size: 0.8rem;
+    margin: 0 0 1rem 0;
+  }
+
+
+  .wp-work-span {
+    font-size: 1rem;
+  }
+
+  .wp-work-spec {
+    font-size: 0.8rem;
+  }
+
+  .wp-work-link {
+    font-size: 1rem;
+  }
+
+  footer {
+    bottom: 2.5rem;
+    font-size: 0.8rem;
+  }
 
 
 }

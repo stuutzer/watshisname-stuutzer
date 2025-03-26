@@ -87,7 +87,6 @@ export default function Navigation() {
             </nav>
         </header>
         <header className='menu-header'>
-            <div>
                 <button
                     className='menu-button'
                     onClick={handleClick}
@@ -95,7 +94,6 @@ export default function Navigation() {
                     {buttonText}
                 </button>
                 <p className='menu-page'> / {pageName}</p>
-            </div>
         </header>
         <AnimatePresence>
         {isMenuOpen && (
