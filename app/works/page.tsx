@@ -10,7 +10,7 @@ export default function Works() {
         name: "MTGlossary",
         time: "November 2024",
         category: "Personal",
-        imgSrc: "mtglossary.png",
+        imgSrc: "test.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
         roles: ["Interface Design", "Product Design", "Full-Stack Development",],
         url: "https://www.mtglossary.com/",
@@ -20,7 +20,7 @@ export default function Works() {
         name: "Tawhiti Forestry",
         time: "March 2025",
         category: "Corporate",
-        imgSrc: "tawhiti.png",
+        imgSrc: "test.png",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
         roles: ["Graphic Design", "Interface Design", "Project Management", "Front-End Development",],
         url: "https://www.tawhiti.co.nz/",
@@ -49,8 +49,8 @@ export default function Works() {
                 <img src={work.imgSrc} alt={"Screenshot of " + work.name + " website."} className="wp-work-img" />
                 <div className="wp-work-bottom">
                   <p className="wp-work-desc">{work.desc}</p>
-                  <aside>
-                      <p className="wp-work-spec">
+                  <aside className="wp-work-spec">
+                      <p>
                           <span className="wp-work-span">Project Responsibilities:</span>
                           <br />
                           {work.roles.join(', ') + "."}
