@@ -49,13 +49,13 @@ export default function Works() {
                 <img src={work.imgSrc} alt={"Screenshot of " + work.name + " website."} className="wp-work-img" />
                 <div className="wp-work-bottom">
                   <p className="wp-work-desc">{work.desc}</p>
-                  <aside className="wp-work-spec">
-                      <p>
+                  <aside className="wp-work-aside">
+                      <p className="wp-work-resp">
                           <span className="wp-work-span">Project Responsibilities:</span>
                           <br />
                           {work.roles.join(', ') + "."}
+                          <br />
                       </p>
-                      <br />
                       <a href={work.url} target="_blank" className="wp-work-link">Visit Site</a>
                   </aside>
                 </div>
