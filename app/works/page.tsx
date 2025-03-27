@@ -11,7 +11,7 @@ export default function Works() {
         time: "November 2024",
         category: "Personal",
         imgSrc: "test.png",
-        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,",
+        desc: "An recurring issue I noticed while playing Magic: The Gathering with my friends was that trying to look up definitions for technical jargon on cards often disrupted the pace of games and bogged down the gameplay experience. To remedy this, I built MTGlossary as an online glossary for aforementioned jargon with a simple interface that prioritizes visual clarity and ease-of-use.",
         roles: ["Interface Design", "Product Design", "Full-Stack Development",],
         url: "https://www.mtglossary.com/",
       },
@@ -54,7 +54,6 @@ export default function Works() {
                           <span className="wp-work-span">Project Responsibilities:</span>
                           <br />
                           {work.roles.join(', ') + "."}
-                          <br />
                       </p>
                       <a href={work.url} target="_blank" className="wp-work-link">Visit Site</a>
                   </aside>
