@@ -11,7 +11,7 @@ export default function Works() {
         time: "November 2024",
         category: "Personal",
         imgSrc: "test.png",
-        desc: "An recurring issue I noticed while playing Magic: The Gathering with my friends was that trying to look up definitions for technical jargon on cards often disrupted the pace of games and bogged down the gameplay experience. To remedy this, I built MTGlossary as an online glossary for aforementioned jargon with a simple interface that prioritizes visual clarity and ease-of-use.",
+        desc: "An recurring issue I noticed while playing Magic with my friends was that trying to look up definitions for technical jargon on cards often disrupted pace and bogged down the gameplay experience. To remedy this, I built MTGlossary with a simple interface that prioritizes visual clarity and ease-of-use.",
         roles: ["Interface Design", "Product Design", "Full-Stack Development",],
         url: "https://www.mtglossary.com/",
       },
