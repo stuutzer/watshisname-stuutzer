@@ -15,7 +15,7 @@ export default function Footer(){
         {
             key: 3,
             name: "Resume PDF",
-            url: "JustinTuResumeMarch2025.pdf",
+            url: "JustinTuResumeApril2025.pdf",
         },
     ]
 
